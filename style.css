@@ -73,7 +73,40 @@
   }
 
   /**************** media ***************/
-  
+  /* tablet */
+   /* @media screen and (min-width: 421px) and (max-width: 768px) {
+
+    
+    body {
+        background-color: red;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .row {
+        width: 100%;
+        margin-top: 0;
+        padding: 10px 10px;
+    } 
+    
+    #lezioni {
+        width: 100%;
+        background-color: #e9e1ae;
+    }
+    #lezioni .row >.left,
+    #lezioni .row >.right {
+        width: 100%;
+        float: none;
+    }
+
+
+  }  */
+
+  /* smartphone */
   @media screen and (max-width: 420px) {
       
     /* common */
@@ -83,6 +116,10 @@
         padding: 0;
     }
 
+    .container {
+        width: 90%;
+    }
+    
     .row {
         width: 100%;
         margin-top: 0;
