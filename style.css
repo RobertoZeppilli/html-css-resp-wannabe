@@ -73,26 +73,41 @@
   }
 
   /**************** media ***************/
+
   /* tablet */
-   /* @media screen and (min-width: 421px) and (max-width: 768px) {
+ @media screen and (min-width: 421px) and (max-width: 768px) {
 
-    
-    body {
-        background-color: red;
-    }
-
+    /* common */
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
-
+    .container {
+        width: 90%;
+    }
+    
     .row {
         width: 100%;
         margin-top: 0;
         padding: 10px 10px;
     } 
     
+    .row img {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    div {
+        font-size: 18px;
+    }
+    
+    /* lezioni */
     #lezioni {
         width: 100%;
         background-color: #e9e1ae;
@@ -103,11 +118,49 @@
         float: none;
     }
 
+    #lezioni .row .left {
+        margin: 10px 0;
+    } 
 
-  }  */
+    /* steps */
+    #steps {
+        width: 100%;
+        background-color: white;
+    }
+
+    #steps .row > .left,
+    #steps .row > .central,
+    #steps .row > .right {
+        float: none;
+        width: 100%;
+    }
+
+    #steps .row .left {
+        margin-top: 10px;
+    }
+
+    #steps .row .left,
+    #steps .row .central {
+        margin-bottom: 30px;
+    }
+
+    /* why */
+    #why {
+        width: 100%;
+        background-color: #e9e1ae;
+    }
+
+    #why .row > .first,
+    #why .row > .second,
+    #why .row > .third {
+        margin-top: 10px;
+    }
+
+
+  } 
 
   /* smartphone */
-  @media screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
       
     /* common */
     * {
@@ -119,7 +172,7 @@
     .container {
         width: 90%;
     }
-    
+
     .row {
         width: 100%;
         margin-top: 0;
@@ -159,6 +212,7 @@
     /* steps */
     #steps {
         width: 100%;
+        background-color: white;
     }
 
     #steps .row >.left,
@@ -176,10 +230,6 @@
     #steps .row .central {
         margin-bottom: 10px;
     }
-
-    #steps {
-        background-color: white;
-    } 
 
     /* why */
     #why {
